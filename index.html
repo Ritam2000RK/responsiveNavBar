@@ -9,17 +9,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
     <nav>
         <ul class="menu">
             <li class="logo"><a href="#"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="logo"></a></li>
             <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Catagory</a></li>
+            <li class="item"><a href="#">Popular</a></li>
             <li class="item"><a href="#">Contact</a></li>
-            <li class="item button"><a href="#">Log in</a></li>
-            <li class="item button secondary"><a href="#">Sign up</a></li>
-            <li class="toggle"><i class="fa-solid fa-bars"></i></li>
+            <li class="item search">
+                <input type="text" placeholder="Search..." id="search-bar">
+            </li>
+            <li class="item button cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+            <!-- <li class="item button"><a href="#">Log in</a></li>
+            <li class="item button secondary"><a href="#">Sign up</a></li> -->
+            <!-- <li class="toggle"><i class="fa-solid fa-bars"></i></li> -->
+            <li class="item button profile">
+                <a href="#"><i class="fas fa-user" id="profile-icon"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
+    </header>
+    <div class="intro">
+        <div class="intro-title">
+            <h1>Welcome to<br> ONE STOP SHOP</h1>
+        </div>
+    </div>
+    <div class="product-catagory">
+        <div class="heading">
+            <h2>Catagory</h2>
+        </div>
+        <div class="product-catagory-list">
+            <li class="product men"><a href="#">Mens</a></li>
+            <li class="product women"><a href="#">Womens</a></li>
+            <li class="product footwear"><a href="#">Footwear</a></li>
+            <li class="product jwellery"><a href="#">Jwellery</a></li>
+            <li class="product homeDecor"><a href="#">Home&Living</a></li>
+            <li class="product electronics"><a href="#">Electronics</a></li>
+        </div>
+        <div class="heading">
+            <h2>Popular Products</h2>
+        </div>
+        <div class="banners">
+            <div class="banner-box banner-box1">
+                <!-- <h4>Spring/summer</h4> -->
+                <h2>upcomming season</h2>
+                <h3>Winter Collection 65% OFF</h3>
+                <!-- <span>The best classic dress is on sale at ONESTOPSHOP</span>
+                <button>Collection</button> -->
+            </div>
+            <div class="banner-box banner-box2">
+                <h2>upcomming season</h2>
+                <h3>Winter Collection 65% OFF</h3>
+            </div>
+            <div class="banner-box banner-box3">
+                <h2>upcomming season</h2>
+                <h3>Winter Collection 65% OFF</h3>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./app.js"></script>
 
 </body>

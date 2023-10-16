@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Onest:wght@100;300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Onest', sans-serif;
 }
 
 nav {
     background-color: black;
     padding: .3rem 2.2rem;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -85,6 +93,218 @@ nav ul li a{
     display: block;
 }
 
+/* Testing */
+
+
+.profile {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 180px;
+    left: -102%;
+    right: 0;
+    background-color: black;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    z-index: 1;
+}
+
+.profile:hover .dropdown {
+    display: block;
+}
+
+.search {
+    order: 1; /* Bring the search bar to the left */
+    width: 100%; /* Occupy the full width */
+}
+
+.item.profile {
+    order: 4; /* Keep the profile where it is */
+}
+
+#search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+#search-bar::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.cart{
+    order: 2;
+    letter-spacing: 0.1rem;
+    width: auto;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+/* Add styles for the icons */
+.cart a i,
+.bag a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Add styles for the dropdown menu */
+.cart .dropdown,
+.bag .dropdown {
+    width: 120px;
+}
+
+
+/* Testing */
+
+.intro {
+    background-image: url("https://www-cdn.bigcommerce.com/assets/Article-Header_Ecommerce_Website.jpg");
+    height: 40rem;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.intro-title {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.product-catagory .heading{
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: 1% 0;
+}
+
+.product-catagory-list {
+    list-style: none;
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+.product {
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    transition: transform 0.3s, scale 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-3px);
+    scale: 1.05;
+}
+
+.product a {
+    color: black;
+    font-weight: bold;
+}
+
+.men {
+    background-image: url("https://images.unsplash.com/photo-1653389944216-531e21933882?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1966&q=80");
+    background-size: cover;
+}
+
+.women {
+    background-image: url("https://images.unsplash.com/photo-1611749068164-59f552b7df9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover;
+}
+
+.footwear {
+    background-image: url("https://images.unsplash.com/photo-1632497775901-50ba4637399f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80");
+    background-size: cover;
+}
+
+.jwellery {
+    background-image: url("https://images.unsplash.com/photo-1656428361240-47e1737b7dce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+    background-size: cover;
+}
+
+.homeDecor {
+    background-image: url("https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80");
+    background-size: cover;
+}
+
+.electronics {
+    background-image: url("https://images.unsplash.com/photo-1640622308205-8ad9478c2386?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+}
+
+.banners {
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+
+.banners h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.banners h3 {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.banners .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-box1 {
+    background-image: url("https://images.wsj.net/im-861879?size=1.5&width=600&height=400");
+}
+
+.banner-box2 {
+    background-image: url("https://www.refinery29.com/images/11153298.jpg?format=webp&width=720&height=864&quality=85&crop=5%3A6");
+}
+
+.banner-box3 {
+    background-image: url("https://static.fibre2fashion.com//articleresources/images/91/9076/FashionTrends2021_Small.jpg");
+}
+
 @media all and (min-width: 483px) {
     .menu {
         justify-content: center;
@@ -96,7 +316,7 @@ nav ul li a{
 
     .item.button {
         width: auto;
-        order: 1;
+        order: 3;
         display: block;
     }
 

@@ -1,5 +1,8 @@
 const items = document.querySelectorAll('.item');
 const toggleBtn = document.querySelector('.toggle');
+const profileBtn = document.getElementById('profile-icon');
+const profileDropdown = document.querySelector('.dropdown');
+const toggleModeButton = document.getElementById('toggle-mode-button');
 
 let isHidden = false;
 
@@ -15,3 +18,7 @@ toggleBtn.addEventListener('click', () => {
   
   
 })
+
+
+
+
